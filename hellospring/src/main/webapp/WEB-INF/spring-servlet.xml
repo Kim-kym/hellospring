@@ -19,7 +19,7 @@
 	<context:annotation-config />
 	<context:component-scan base-package="himedia.hellospring.controllers">
 		<context:include-filter type="annotation"
-			expression="org.springframework.stereotype.controller" />
+			expression="org.springframework.stereotype.Controller" />
 		<!-- 특정 필터를 제외하고 등록할 경우 -->
 		<!-- context:exclude-filter type="regex" expression=".*" / -->
 	</context:component-scan>          

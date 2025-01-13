@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import himedia.hellospring.vo.userVo;
+import himedia.hellospring.vo.UserVo;
 
 //	Type + Method 매핑
 @RequestMapping("/user")
@@ -18,7 +18,7 @@ public class UserController {
 	}
 	
 	@RequestMapping(value="/join", method=RequestMethod.POST)
-	public String joinAction(@ModelAttribute userVo vo) {
+	public String joinAction(@ModelAttribute UserVo vo) {
 		System.out.println("가입 데이터:" + vo);
 		return "redirect:/user/joinsuccess";
 	}

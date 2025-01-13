@@ -1,13 +1,13 @@
 package himedia.hellospring.vo;
 
-public class userVo {
+public class UserVo {
 	private Long no; 
 	private String name;
 	private String email;
 	private String password;
 	private String gender;
 	
-	public userVo() {
+	public UserVo() {
 		
 	}
 
@@ -53,7 +53,7 @@ public class userVo {
 	
 	@Override
 	public String toString() {
-		return "userVo [no=" + no + ", name=" + name + ", email=" + email + ", password=" + password + ", gender="
+		return "UserVo [no=" + no + ", name=" + name + ", email=" + email + ", password=" + password + ", gender="
 				+ gender + "]";
 	}
 }
